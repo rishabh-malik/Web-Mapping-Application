@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_ee18245fa3054a839f4911327bd4dd72 {
+            <style> #map_a1f6526b169c429b8dff420352f862e8 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_ee18245fa3054a839f4911327bd4dd72" ></div>
+            <div class="folium-map" id="map_a1f6526b169c429b8dff420352f862e8" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_ee18245fa3054a839f4911327bd4dd72 = L.map(
-                                  'map_ee18245fa3054a839f4911327bd4dd72',
+            var map_a1f6526b169c429b8dff420352f862e8 = L.map(
+                                  'map_a1f6526b169c429b8dff420352f862e8',
                                   {center: [45,-121],
                                   zoom: 12,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_3722d14d112845ba93e07d73e188c00d = L.tileLayer(
+            var tile_layer_a7edc7f9c67a407e8b416ef3e937a720 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,7 +65,51 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_ee18245fa3054a839f4911327bd4dd72);
+                ).addTo(map_a1f6526b169c429b8dff420352f862e8);
 
+        
+    
+
+            var marker_93fc0d4983cc40beb652775fadf4458c = L.marker(
+                [45.32,-121.66],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a1f6526b169c429b8dff420352f862e8);
+            
+    
+            var popup_9c61f3e23f944d26ac72977487289827 = L.popup({maxWidth: '300'});
+
+            
+                var html_6202e6808ca9411593f799f7acc8dccc = $('<div id="html_6202e6808ca9411593f799f7acc8dccc" style="width: 100.0%; height: 100.0%;">Mt hood</div>')[0];
+                popup_9c61f3e23f944d26ac72977487289827.setContent(html_6202e6808ca9411593f799f7acc8dccc);
+            
+
+            marker_93fc0d4983cc40beb652775fadf4458c.bindPopup(popup_9c61f3e23f944d26ac72977487289827);
+
+            
+        
+    
+
+            var marker_2818753f77e642d3bdeb13189d59685c = L.marker(
+                [44,-120.66],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a1f6526b169c429b8dff420352f862e8);
+            
+    
+            var popup_e6551f52953344e6bb593fa0ba482d80 = L.popup({maxWidth: '300'});
+
+            
+                var html_74ce25f731e1448eb6dc5edcfff657bf = $('<div id="html_74ce25f731e1448eb6dc5edcfff657bf" style="width: 100.0%; height: 100.0%;">Mt hood</div>')[0];
+                popup_e6551f52953344e6bb593fa0ba482d80.setContent(html_74ce25f731e1448eb6dc5edcfff657bf);
+            
+
+            marker_2818753f77e642d3bdeb13189d59685c.bindPopup(popup_e6551f52953344e6bb593fa0ba482d80);
+
+            
         
 </script>
